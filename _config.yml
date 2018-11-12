@@ -1,13 +1,14 @@
 # Site settings
-title: 王琳翔 张秀丽 和 念念的 improve  
-SEOTitle: 王琳翔的博客 | improve evolution
+title: evolution
+SEOTitle: 王琳翔的博客 | improve && evolution
 header-img: img/post-bg-desk.jpg
-email: WangLinX@gmail.com
-description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 柏荧的博客, WangLinX, 邱柏荧, iOS, Apple, iPhone"
+email: wlx67345@163.com
+description: "坚韧、自律、成长、活的轻松"
+keyword: "wlx, wzwevo, 王琳翔的博客, WangLinX, python, hadoop, spark"
 url: "http://WangLinX.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/WangLinX/WangLinX.github.io.git" # you code repository
+description_footer: 来自王琳翔的个人专栏
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
