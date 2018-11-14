@@ -1,7 +1,13 @@
-﻿# 使用nginx uwsgi flask 部署图片上传接口
-
-标签（空格分隔）： python
-
+﻿---
+layout:     post
+title:      使用nginx uwsgi flask 部署图片上传接口
+subtitle:   nginx uwsgi flask
+date:       2018-11-14
+author:     WLX
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - python
 ---
 
 ## 安装nginx uwsgi flask
