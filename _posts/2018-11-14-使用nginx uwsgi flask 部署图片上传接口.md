@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      使用nginx uwsgi flask 部署图片上传接口  
 subtitle:   nginx uwsgi flask
