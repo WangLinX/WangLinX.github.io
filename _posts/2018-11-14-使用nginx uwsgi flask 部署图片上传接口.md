@@ -10,7 +10,7 @@ tags:
     - python
 ---
 
-## 安装nginx uwsgi flask 222
+## 安装nginx uwsgi flask
 安装nginx： 略
 安装uwsgi： pip install uwsgi
 安装flask： pip install flask
@@ -82,7 +82,6 @@ pidfile = /home/trio/app/base/python/uwsgi9090.pid
 daemonize = /home/trio/app/base/python/uwsgi9090.log
 ```
 说明：
-
  - socket为uwsgi监听的ip和端口。
  - touch-reload 指定目录，目录中文件变化，自动reload uwsgi
 
