@@ -10,7 +10,7 @@ tags:
     - python
 ---
 
-## 安装nginx uwsgi flask
+## 安装nginx uwsgi flask 222
 安装nginx： 略
 安装uwsgi： pip install uwsgi
 安装flask： pip install flask
