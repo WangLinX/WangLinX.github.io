@@ -1,9 +1,7 @@
 # Site settings
-title: 王琳翔的专栏
-SEOTitle: 王琳翔的博客 | improve && evolution
+title: 同理之心， 大道至简， 知行合一
 header-img: img/post-bg-desk.jpg
 email: wlx67345@163.com
-description: "坚韧、成长、活的轻松"
 keyword: "wlx, wzwevo, 王琳翔的博客, WangLinX, python, hadoop, spark"
 url: "http://WangLinX.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
