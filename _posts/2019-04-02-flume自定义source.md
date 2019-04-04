@@ -54,3 +54,5 @@ public class mySource extends AbstractSource {
  - 导出到jar包
  
  右侧选择maven --- Lifecycle --- 右键 validate --- run maven build --- 成功后， 右键install --- run “project 名” \[install] 
+ 
+ - 放到flume的lib下
