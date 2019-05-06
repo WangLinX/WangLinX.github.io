@@ -13,7 +13,7 @@ tags:
 ## 安装nginx uwsgi flask
 安装nginx： 略
 安装uwsgi： pip install uwsgi
-安装flask： pip install flask
+安装flask： pip install flask 
 
 ## 配置 nginx
 
