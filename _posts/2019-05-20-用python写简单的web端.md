@@ -16,7 +16,6 @@ tags:
 ```python
 #!/usr/bin/env python3
 
-
 '''
 web服务器
 1. 服务端接收： 接收tcp连接， http协议， 解析请求
@@ -34,18 +33,28 @@ def recv(conn, addr):
     recv_data = ''
     data = conn.recv(1024)
     recv_data += data.decode("utf-8")
-    result = re.search(r"GET .+ HTTP/1.1", recv_data)
+    print('>>>>>>>')
+    print(recv_data)
+    result = re.search(r"[^/]+/([^ ]*)", recv_data.splitlines()[0])
     if result:
-        print(result)
-        # uri = result.group().split()[1]
-        send_data = '''HTTP/1.1 200 OK\r\n\r\n
-        <!DOCTYPE html>
-        <html>
-        <h1>welcome, %s<h1>
-        </html>
-        ''' % str(addr)
-        conn.send(send_data.encode("utf-8"))
-        conn.close()
+        uri = result.group(1)
+    document_root = 'C:\\Users\\wlx\\Desktop\\'
+    if uri:
+        path = document_root + uri
+    else:
+        path = document_root + "index.html"
+    try:
+        f = open(path, 'rb')
+    except:
+        send_header = 'HTTP/1.1 404 NOT FOUND\r\n\r\n'
+        send_body = '--- file not found ---'.encode('utf-8')
+    else:
+        send_body = f.read()
+        send_header = 'HTTP/1.1 200 OK\r\n\r\n'
+        f.close()
+    conn.send(send_header.encode("utf-8"))
+    conn.send(send_body)
+    conn.close()
 
 
 def main():
@@ -55,8 +64,6 @@ def main():
     while True:
         print("Waiting for connection......")
         conn, addr = sk.accept()
-        print(conn)
-        print(addr)
         tt = threading.Thread(target=recv, args=(conn, addr))
         tt.start()
     sk.close()
